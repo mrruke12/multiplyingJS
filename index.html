@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Умножение столбиком</title>
+
+	<style>
+		body {
+			background: #18181a;
+			color: #b4b2b0;
+			font-size: 12px;
+		}
+		.bottom {
+			border-bottom: 2px #b4b2b0 solid;
+		}
+
+		.inv {
+			color: rgba(0, 0, 0, 0.0);
+		}
+
+		.container {
+			max-width: 100%;
+			width: 50%;
+			margin: 0 auto;
+		}
+
+		table {
+
+			border-collapse: collapse;
+
+			border-spacing: 0;
+
+			width: 90%;
+
+			overflow: hidden;
+
+		}
+
+		table th, table td {
+
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			padding: 2px;
+
+			text-align: center;
+
+			vertical-align: middle;
+
+			position: relative;
+		}
+
+		table th, table td {
+
+			border: 1px solid rgba(255, 255, 255, 0.1);
+
+			padding: 2px;
+
+			text-align: center;
+
+			vertical-align: middle;
+
+			position: relative;
+
+		}
+
+
+		table td:hover {
+
+			background: rgba(255, 250, 190, 0.3);
+
+		}
+
+		
+
+		table td:hover:before { 
+
+			background-color: rgba(255, 255, 255, 0.1);;
+
+			content: '';  
+
+			height: 100%;
+
+			left: -5000px;
+
+			position: absolute;  
+
+			top: 0;
+
+			width: 10000px;   
+
+			z-index: -2;        
+
+		}
+
+		
+
+		table td:hover:after { 
+
+			background-color: rgba(255, 255, 255, 0.1);;
+
+			content: '';  
+
+			height: 10000px;    
+
+			left: 0;
+
+			position: absolute;  
+
+			top: -5000px;
+
+			width: 100%;
+
+			z-index: -1;        
+
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		 <!-- та самая таблица  -->
+		<table id="table"></table>
+	</div>
+</body>
+
+<script src="code.js"></script>
+</html>
